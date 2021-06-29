@@ -1,0 +1,7 @@
+hal_wrapper.c:17:6:set_left_attenuation	16	static
+hal_wrapper.c:27:6:set_right_attenuation	16	static
+hal_wrapper.c:38:6:set_diff_gain	24	static
+hal_wrapper.c:67:6:set_amp_enable	16	static
+hal_wrapper.c:84:4:read_adc	32	static
+hal_wrapper.c:117:4:get_uart_byte	16	static
+hal_wrapper.c:124:4:send_uart_byte	16	static

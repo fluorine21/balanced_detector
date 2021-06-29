@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;stmcube_prj/Application/User/Core/c_drivers/hal_wrapper&apos; to &apos;hal_wrapper.c&apos;" description="Rename resource &apos;hal_wrapper&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Application/User/Core/c_drivers/hal_wrapper" name="hal_wrapper.c" stamp="1622498978895" updateReferences="true"/>
+</session>

@@ -1,0 +1,7 @@
+21:13:49 **** Incremental Build of configuration Debug for project stmcube_prj ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-objcopy.exe -O ihex stmcube_prj.elf stmcube_prj.hex 
+Info: Parallel threads used: 0
+
+21:13:49 Build Finished (took 185ms)
+

@@ -1,0 +1,44 @@
+/*
+ * hal_wrapper.c
+ *
+ *  Created on: May 31, 2021
+ *      Author: James Williams
+ */
+
+//Definitions for the pins
+#include "main.h"
+
+void set_left_attenuation(u8 val)
+{
+	HAL_GPIO_WritePin(V5L_Pin, V5L_GPIO_Port,GPIO_PIN_RESET);
+}
+
+void set_right_attenuation(u8 val)
+{
+
+}
+
+//5-bit gain setting for differential amplifier
+void set_diff_gain(u8 val)
+{
+
+}
+
+//Enables or disables output amplifier
+void set_amp_enable(u8 val)
+{
+
+}
+
+//If sel = 0, get ADC0 else ADC1
+u16 read_adc(u8 sel)
+{
+
+}
+
+
+
+
+
+
+

@@ -1,0 +1,28 @@
+/*
+ * hal_wrapper.c
+ *
+ *  Created on: May 31, 2021
+ *      Author: James Williams
+ */
+
+void set_left_attenuation(u8 val)
+{
+
+}
+
+void set_right_attenuation(u8 val)
+{
+
+}
+
+void set_diff_gain()
+{
+
+}
+
+
+
+
+
+
+

@@ -1,0 +1,20 @@
+/*
+ * cmd_handler.c
+ *
+ *  Created on: Jun 1, 2021
+ *      Author: James Williams
+ */
+
+
+void handler_entry()
+{
+	//Initialization
+
+
+
+	//handle command
+	while(1)
+	{
+		handle_command();
+	}
+}
