@@ -13,14 +13,4 @@
 #define u8 uint8_t
 #define u16 uint16_t
 
-
-
-void set_left_attenuation(u8 val);
-void set_right_attenuation(u8 val);
-void set_diff_gain(u8 val);
-void set_amp_enable(u8 val);
-u8 read_adc(u8 sel, u16 *val);
-u8 get_uart_byte(u8 * res);
-u8 send_uart_byte(u8 * bt);
-
 #endif /* APPLICATION_USER_CORE_C_DRIVERS_HAL_WRAPPER_H_ */

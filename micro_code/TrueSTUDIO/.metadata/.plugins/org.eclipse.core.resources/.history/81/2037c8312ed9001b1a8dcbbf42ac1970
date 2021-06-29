@@ -64,7 +64,6 @@ void handle_command()
 	//Switch the command
 	u8 res = 0;
 	u8 arg = 0;
-	u16 adc_res;
 	switch(cmd_byte)
 	{
 
@@ -74,64 +73,46 @@ void handle_command()
 
 		case CMD_SET_LEFT:
 			//Get the next byte
-			if(get_uart_byte(&arg)){return;}
+			if(get_uart_byte(arg)){return;}
 			//Use it to set the left attenuation
 			set_left_attenuation(arg);
 			break;
 
 		case CMD_SET_RIGHT:
 			//Get the next byte
-			if(get_uart_byte(&arg)){return;}
+			if(get_uart_byte(arg)){return;}
 			//Use it to set the right attenuation
 			set_right_attenuation(arg);
 			break;
 
 		case CMD_SET_INPUT_GAIN:
 			//Get the next byte
-			if(get_uart_byte(&arg)){return;}
+			if(get_uart_byte(arg)){return;}
 			//Use it to set the input gain
 			set_diff_gain(arg);
 			break;
 
 		case CMD_SET_OUTPUT_GAIN:
 			//Get the next byte
-			if(get_uart_byte(&arg)){return;}
+			if(get_uart_byte(arg)){return;}
 			//Use it to set the output gain (15dB or 0dB)
 			set_amp_enable(arg);
 			break;
 
 		case CMD_GET_ADC1:
-			//Read ADC1's value
-			read_adc(0, &adc_res);
-			//Send it back over uart with msb first
-			arg = (adc_res >> 8) & 0xff;
-			send_uart_byte(arg);
-			arg = adc_res & 0xff;
-			send_uart_byte(arg);
+
 			break;
 
 		case CMD_GET_ADC2:
-			//Read ADC1's value
-			read_adc(1, &adc_res);
-			//Send it back over uart with msb first
-			arg = (adc_res >> 8) & 0xff;
-			send_uart_byte(arg);
-			arg = adc_res & 0xff;
-			send_uart_byte(arg);
+
 			break;
 
 		case CMD_SET_LED1:
-			//Get the next byte
-			if(get_uart_byte(&arg)){return;}
-			//set the LED state
-			set_led(0, arg);
+
 			break;
 
 		case CMD_SET_LED2:
-			//Get the next byte
-			if(get_uart_byte(&arg)){return;}
-			//set the LED state
-			set_led(1, arg);
+
 			break;
 
 	}

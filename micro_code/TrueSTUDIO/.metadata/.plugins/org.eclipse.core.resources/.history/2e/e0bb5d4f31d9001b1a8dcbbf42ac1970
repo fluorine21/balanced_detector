@@ -121,17 +121,11 @@ void handle_command()
 			break;
 
 		case CMD_SET_LED1:
-			//Get the next byte
-			if(get_uart_byte(&arg)){return;}
-			//set the LED state
-			set_led(0, arg);
+
 			break;
 
 		case CMD_SET_LED2:
-			//Get the next byte
-			if(get_uart_byte(&arg)){return;}
-			//set the LED state
-			set_led(1, arg);
+
 			break;
 
 	}

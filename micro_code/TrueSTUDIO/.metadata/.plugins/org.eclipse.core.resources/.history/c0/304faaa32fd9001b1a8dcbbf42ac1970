@@ -102,36 +102,21 @@ void handle_command()
 
 		case CMD_GET_ADC1:
 			//Read ADC1's value
-			read_adc(0, &adc_res);
+			read_adc(0, &arg);
 			//Send it back over uart with msb first
-			arg = (adc_res >> 8) & 0xff;
-			send_uart_byte(arg);
-			arg = adc_res & 0xff;
-			send_uart_byte(arg);
+
 			break;
 
 		case CMD_GET_ADC2:
-			//Read ADC1's value
-			read_adc(1, &adc_res);
-			//Send it back over uart with msb first
-			arg = (adc_res >> 8) & 0xff;
-			send_uart_byte(arg);
-			arg = adc_res & 0xff;
-			send_uart_byte(arg);
+
 			break;
 
 		case CMD_SET_LED1:
-			//Get the next byte
-			if(get_uart_byte(&arg)){return;}
-			//set the LED state
-			set_led(0, arg);
+
 			break;
 
 		case CMD_SET_LED2:
-			//Get the next byte
-			if(get_uart_byte(&arg)){return;}
-			//set the LED state
-			set_led(1, arg);
+
 			break;
 
 	}
