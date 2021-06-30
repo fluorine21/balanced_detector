@@ -22,5 +22,6 @@ void set_amp_enable(u8 val);
 u8 read_adc(u8 sel, u16 *val);
 u8 get_uart_byte(u8 * res);
 u8 send_uart_byte(u8 * bt);
+void set_led(u8 num, u8 val);
 
 #endif /* APPLICATION_USER_CORE_C_DRIVERS_HAL_WRAPPER_H_ */

@@ -1,2 +1,2 @@
-cmd_handler.c:28:6:handler_entry	8	static
-cmd_handler.c:42:6:handle_command	16	static
+cmd_handler.c:27:6:handler_entry	8	static
+cmd_handler.c:41:6:handle_command	16	static

@@ -105,9 +105,9 @@ void handle_command()
 			read_adc(0, &adc_res);
 			//Send it back over uart with msb first
 			arg = (adc_res >> 8) & 0xff;
-			send_uart_byte(arg);
+			send_uart_byte(&arg);
 			arg = adc_res & 0xff;
-			send_uart_byte(arg);
+			send_uart_byte(&arg);
 			break;
 
 		case CMD_GET_ADC2:
@@ -115,9 +115,9 @@ void handle_command()
 			read_adc(1, &adc_res);
 			//Send it back over uart with msb first
 			arg = (adc_res >> 8) & 0xff;
-			send_uart_byte(arg);
+			send_uart_byte(&arg);
 			arg = adc_res & 0xff;
-			send_uart_byte(arg);
+			send_uart_byte(&arg);
 			break;
 
 		case CMD_SET_LED1:
@@ -136,6 +136,6 @@ void handle_command()
 
 	}
 	//Send the ack
-	send_uart_byte(res);
+	send_uart_byte(&res);
 	return;
 }

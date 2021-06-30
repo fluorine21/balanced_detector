@@ -114,10 +114,33 @@ u8 read_adc(u8 sel, u16 *val)
 
 //Returns status not result
 //0 result is success
+u8 uart_rec_buff[100];//Buffer for UART hardware
+u8 uart_buffer[100];//Our own buffer for storing incoming bytes
+u16 uart_buffer_pos;
+u16 uart_buffer_size;
+void uart_init()
+{
+	//Initialize the buffer
+	uart_buffer_pos = 0;
+	uart_buffer_size = 0;
+
+	//Register the ISR callback here
+	HAL_UART_Receive_IT(&huart2, uart_rec_buff, 1);
+}
+
+void  HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
+{
+
+
+}
+
 u8 get_uart_byte(u8 * res)
 {
 	return HAL_UART_Receive(&huart2, res, 1, HAL_MAX_DELAY) == HAL_OK ? 0 : 1;
 }
+
+
+
 
 //Returns status not result
 //0 result is success
