@@ -2,7 +2,7 @@
  * hal_wrapper.c
  *
  *  Created on: May 31, 2021
- *      Author: James Williams
+ *      Author: James A. Williams
  */
 
 //Definitions for the pins
@@ -114,14 +114,17 @@ u8 read_adc(u8 sel, u16 *val)
 
 //Returns status not result
 //0 result is success
-u8 uart_rec_buff[100];//Buffer for UART hardware
-u8 uart_buffer[100];//Our own buffer for storing incoming bytes
-u16 uart_buffer_pos;
+#define uart_buff_size 100
+u8 uart_rec_buff[uart_buff_size];//Buffer for UART hardware
+u8 uart_buffer[uart_buff_size];//Our own buffer for storing incoming bytes
+u16 uart_buffer_w_pos;
+u16 uart_buffer_r_pos;
 u16 uart_buffer_size;
 void uart_init()
 {
 	//Initialize the buffer
-	uart_buffer_pos = 0;
+	uart_buffer_w_pos = 0;
+	uart_buffer_r_pos = 0;
 	uart_buffer_size = 0;
 
 	//Register the ISR callback here
@@ -130,13 +133,39 @@ void uart_init()
 
 void  HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
-
-
+	//Copy the received byte into the local buffer
+	uart_buffer[uart_buffer_w_pos] = uart_rec_buff[0];
+	//Update the pointer
+	uart_buffer_w_pos = uart_buffer_w_pos >= uart_buff_size-1 ? 0 : uart_buffer_w_pos + 1;
+	//Update the size counter
+	uart_buffer_size += 1;
+	//Re-register the callback
+	HAL_UART_Receive_IT(&huart2, uart_rec_buff, 1);
 }
 
 u8 get_uart_byte(u8 * res)
 {
-	return HAL_UART_Receive(&huart2, res, 1, HAL_MAX_DELAY) == HAL_OK ? 0 : 1;
+	//Old polling method
+	//return HAL_UART_Receive(&huart2, res, 1, HAL_MAX_DELAY) == HAL_OK ? 0 : 1;
+
+	//If the buffer is empty
+	if(uart_buffer_size == 0)
+	{
+		//Return an error
+		return 1;
+	}
+
+	//Set the return variable first
+	*res = uart_buffer[uart_buffer_r_pos];
+
+	//Update the read position pointer
+	uart_buffer_r_pos = uart_buffer_r_pos >= uart_buff_size-1 ? 0 : uart_buffer_r_pos + 1;
+
+	//Reduce the size counter
+	uart_buffer_size -= 1;
+
+	//Success
+	return 0;
 }
 
 

@@ -1,2 +1,5 @@
-cmd_handler.c:27:6:handler_entry	8	static
-cmd_handler.c:41:6:handle_command	16	static
+cmd_handler.c:34:6:handler_entry	8	static
+cmd_handler.c:50:6:handle_command	8	static
+cmd_handler.c:68:6:state_wait_preamble	16	static
+cmd_handler.c:89:6:state_wait_cmd	16	static
+cmd_handler.c:144:6:state_wait_data	16	static

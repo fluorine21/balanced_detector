@@ -3,8 +3,8 @@ hal_wrapper.c:27:6:set_right_attenuation	16	static
 hal_wrapper.c:38:6:set_diff_gain	24	static
 hal_wrapper.c:67:6:set_amp_enable	16	static
 hal_wrapper.c:84:4:read_adc	32	static
-hal_wrapper.c:121:6:uart_init	8	static
-hal_wrapper.c:131:7:HAL_UART_RxCpltCallback	16	static
-hal_wrapper.c:137:4:get_uart_byte	16	static
-hal_wrapper.c:147:4:send_uart_byte	16	static
-hal_wrapper.c:152:6:set_led	16	static
+hal_wrapper.c:123:6:uart_init	8	static
+hal_wrapper.c:134:7:HAL_UART_RxCpltCallback	16	static
+hal_wrapper.c:146:4:get_uart_byte	16	static
+hal_wrapper.c:176:4:send_uart_byte	16	static
+hal_wrapper.c:181:6:set_led	16	static
