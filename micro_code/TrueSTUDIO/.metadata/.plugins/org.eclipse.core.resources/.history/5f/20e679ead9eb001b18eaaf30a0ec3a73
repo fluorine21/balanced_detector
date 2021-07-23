@@ -175,8 +175,7 @@ u8 get_uart_byte(u8 * res)
 //0 result is success
 u8 send_uart_byte(u8 * bt)
 {
-	while(HAL_UART_Transmit_IT(&huart2, bt, 1) == HAL_BUSY){}
-	return 0;
+	while(HAL_UART_Transmit_IT(&huart2, bt, 1, 1) != HAL_BUSY){};
 }
 
 void set_led(u8 num, u8 val)

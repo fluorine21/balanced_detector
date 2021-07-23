@@ -115,7 +115,7 @@ u8 read_adc(u8 sel, u16 *val)
 //Returns status not result
 //0 result is success
 #define uart_buff_size 1024
-u8 uart_rec_buff[16];//Buffer for UART hardware
+u8 uart_rec_buff[10];//Buffer for UART hardware
 u8 uart_buffer[uart_buff_size];//Our own buffer for storing incoming bytes
 u16 uart_buffer_w_pos;
 u16 uart_buffer_r_pos;
@@ -175,8 +175,7 @@ u8 get_uart_byte(u8 * res)
 //0 result is success
 u8 send_uart_byte(u8 * bt)
 {
-	while(HAL_UART_Transmit_IT(&huart2, bt, 1) == HAL_BUSY){}
-	return 0;
+	return HAL_UART_Transmit(&huart2, bt, 1, 1) == HAL_OK ? 0 : 1;
 }
 
 void set_led(u8 num, u8 val)
