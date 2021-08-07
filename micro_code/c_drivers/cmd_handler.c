@@ -22,6 +22,7 @@
 #define CMD_GET_ADC2 0x06
 #define CMD_SET_LED1 0x07
 #define CMD_SET_LED2 0x08
+#define CMD_SET_SWITCH 0x09
 
 u8 state;
 u8 cmd_byte;
@@ -38,6 +39,8 @@ void handler_entry()
 
 	state = STATE_PRE;
 	cmd_byte = 0;
+
+	gpio_init();
 
 	//handle command
 	while(1)
@@ -145,6 +148,7 @@ void state_wait_data()
 {
 	//Wait for the argument byte
 	u8 arg = 0;
+	u8 res = 0;
 	if(get_uart_byte(&arg)){return;}
 
 	//Do something based on the command
@@ -179,8 +183,13 @@ void state_wait_data()
 			set_led(1, arg);
 			break;
 
+		case CMD_SET_SWITCH:
+			set_switch(arg);
+			break;
+
 	}
 	//We've successfully executed the command so we can go back to waiting for the preamble
+	send_uart_byte(&res);
 	state = STATE_PRE;
 	return;
 

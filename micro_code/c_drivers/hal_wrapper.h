@@ -24,5 +24,7 @@ u8 get_uart_byte(u8 * res);
 u8 send_uart_byte(u8 * bt);
 void set_led(u8 num, u8 val);
 void uart_init();
+void set_switch(u8 val);
+void gpio_init();
 
 #endif /* APPLICATION_USER_CORE_C_DRIVERS_HAL_WRAPPER_H_ */

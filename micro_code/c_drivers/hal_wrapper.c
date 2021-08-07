@@ -14,6 +14,16 @@
 extern ADC_HandleTypeDef hadc;
 extern UART_HandleTypeDef huart2;
 
+
+void gpio_init()
+{
+	HAL_GPIO_WritePin(CS_GPIO_Port, CS_Pin, GPIO_PIN_SET);
+	set_amp_enable(0);
+	set_switch(0);
+	set_left_attenuation(0);
+	set_right_attenuation(0);
+}
+
 void set_left_attenuation(u8 val)
 {
 	//Set each bit one at a time by selecting the relevant bit in val
@@ -31,6 +41,22 @@ void set_right_attenuation(u8 val)
 	HAL_GPIO_WritePin(V3R_GPIO_Port, V3R_Pin, val & (1<<2) ? GPIO_PIN_SET : GPIO_PIN_RESET);
 	HAL_GPIO_WritePin(V2R_GPIO_Port, V2R_Pin, val & (1<<1) ? GPIO_PIN_SET : GPIO_PIN_RESET);
 	HAL_GPIO_WritePin(V1R_GPIO_Port, V1R_Pin, val & (1<<0) ? GPIO_PIN_SET : GPIO_PIN_RESET);
+}
+
+//Sets the state of the RF switch (0 is normal operation, 1 is ADC measurement)
+void set_switch(u8 val)
+{
+	if(val)
+	{
+		HAL_GPIO_WritePin(SV1_GPIO_Port, SV1_Pin, GPIO_PIN_RESET);
+		HAL_GPIO_WritePin(SV2_GPIO_Port, SV2_Pin, GPIO_PIN_SET);
+	}
+	else
+	{
+		HAL_GPIO_WritePin(SV1_GPIO_Port, SV1_Pin, GPIO_PIN_SET);
+		HAL_GPIO_WritePin(SV2_GPIO_Port, SV2_Pin, GPIO_PIN_RESET);
+	}
+
 }
 
 //5-bit gain setting for differential amplifier
@@ -53,6 +79,7 @@ void set_diff_gain(u8 val)
 			HAL_GPIO_WritePin(SDIO_GPIO_Port, SDIO_Pin, val & (1 << i) ? GPIO_PIN_SET : GPIO_PIN_RESET);
 		}
 		//Cycle the clock
+		HAL_Delay(1);
 		HAL_GPIO_WritePin(SCLK_GPIO_Port, SCLK_Pin, GPIO_PIN_SET);
 		HAL_Delay(1);
 		HAL_GPIO_WritePin(SCLK_GPIO_Port, SCLK_Pin, GPIO_PIN_RESET);
