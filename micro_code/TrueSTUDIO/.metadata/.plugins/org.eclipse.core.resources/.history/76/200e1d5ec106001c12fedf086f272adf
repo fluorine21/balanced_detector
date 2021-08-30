@@ -68,7 +68,6 @@ void set_diff_gain(u8 val)
 	HAL_GPIO_WritePin(CS_GPIO_Port, CS_Pin, GPIO_PIN_RESET);
 	HAL_Delay(1);
 	HAL_GPIO_WritePin(SCLK_GPIO_Port, SCLK_Pin, GPIO_PIN_RESET);
-	HAL_Delay(1);
 	int j = 0;
 	for(int i = 0; i < 8; i++)
 	{
