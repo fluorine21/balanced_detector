@@ -1,0 +1,71 @@
+# Created by Ultra Librarian Gold 8.3.307 Copyright © 1999-2021
+# Frank Frank, Accelerated Designs
+
+StartFootprints
+
+Footprint (Name "CONN_142-0711-821_CIN")
+Pad (Name "1") (Location 0, -195) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 70, 165) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "2") (Location -137.5, -195) (Surface True) (Rotation 0)
+PadShape (Size 105, 165) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "3") (Location 137.5, -195) (Surface True) (Rotation 0)
+PadShape (Size 105, 165) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "4") (Location -137.5, -195) (Surface True) (Rotation 0)
+PadShape (Size 105, 165) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "5") (Location 137.5, -195) (Surface True) (Rotation 0)
+PadShape (Size 105, 165) (Shape Rectangular) (Layer Top)
+EndPad
+Line (Width 6) (Start -200, 272.5) (End -200, -287.5) (Layer Mechanical15) 
+Line (Width 6) (Start -200, -287.5) (End 200, -287.5) (Layer Mechanical15) 
+Line (Width 6) (Start 200, -287.5) (End 200, 272.5) (Layer Mechanical15) 
+Line (Width 6) (Start 200, 272.5) (End -200, 272.5) (Layer Mechanical15) 
+Polygon (PointCount 4) (Layer Mechanical15) 
+Point (-200, 272.5)
+Point (-200, -287.5)
+Point (200, -287.5)
+Point (200, 272.5)
+EndPolygon
+Polygon (PointCount 4) (Layer Mechanical5) 
+Point (140, 277.5)
+Point (140, -277.5)
+Point (-140, -277.5)
+Point (-140, 277.5)
+EndPolygon
+Line (Width 6) (Start 48.10000038, -267.5) (End 71.89999962, -267.5) (Layer TopOverlay) 
+Line (Width 6) (Start -71.89999962, -267.5) (End -48.10000038, -267.5) (Layer TopOverlay) 
+Line (Width 6) (Start 130, -99.39999962) (End 130, 267.5) (Layer TopOverlay) 
+Line (Width 6) (Start 130, 267.5) (End -130, 267.5) (Layer TopOverlay) 
+Line (Width 6) (Start -130, 267.5) (End -130, -99.39999962) (Layer TopOverlay) 
+Line (Width 1) (Start -125, -262.5) (End 125, -262.5) (Layer Mechanical13) 
+Line (Width 1) (Start 125, -262.5) (End 125, 262.5) (Layer Mechanical13) 
+Line (Width 1) (Start 125, 262.5) (End -125, 262.5) (Layer Mechanical13) 
+Line (Width 1) (Start -125, 262.5) (End -125, -262.5) (Layer Mechanical13) 
+Arc (Width 20) (Radius 15) (Location 0, -270) (StartAngle 0) (EndAngle 360) (Layer Mechanical13) 
+Arc (Width 20) (Radius 15) (Location -155, -195) (StartAngle 0) (EndAngle 360) (Layer BottomOverlay) 
+Line (Width 1) (Start 125, -112.5) (End -125, -112.5) (Layer MultiLayer) 
+Step (Name CONN_142-0711-821_CIN.step)
+EndFootprint
+EndFootprints
+
+StartComponents
+
+Component (Name "142-0711-821") (PartCount 1) (DesPrefix "J?")
+Pin (Location 200, 0) (Rotation 180) (PinType Passive) (Length 200) (Width 0) (Designator Visible "1") (Name Hidden "1") (PinSwap 0) (PartSwap 0) (PinSeq 1) (Part 1)
+Line (Width 5) (Start 400, 0) (End 200, 0) (Part 1)
+Line (Width 5) (Start 400, 0) (End 350, 33.3333) (Part 1)
+Line (Width 5) (Start 400, 0) (End 350, -33.3333) (Part 1)
+Rectangle (Width 5) (Start 200, -100) (End 500, 100) (Part 1)
+Parameter (Name "Copyright") (Location 0, 0) (Height 50) (Rotation 0) (Justification Center) (Value "Copyright (C) 2022 Ultra Librarian. All rights reserved.") (Part 1)
+Parameter (Name "Mfr_Name") (Location 0, 0) (Height 50) (Rotation 0) (Justification Center) (Value "Cinch Connectivity Solutions") (Part 1)
+Parameter (Name "Manufacturer_Part_Number") (Location 0, 0) (Height 50) (Rotation 0) (Justification Center) (Value "142-0711-821") (Part 1)
+Parameter (Name "RefDes") (Location 350, 250) (Height 82) (Rotation 0) (Justification Center) (Value "RefDes") (Part 1)
+Parameter (Name "Type") (Location 400, 0) (Height 82) (Rotation 0) (Justification Center) (Value "DEV") (Part 1)
+Description (Value "No Description Available") (Part 1)
+Comment (Value "142-0711-821") (Part 1)
+Footprint (Name "CONN_142-0711-821_CIN")
+EndComponent
+EndComponents
