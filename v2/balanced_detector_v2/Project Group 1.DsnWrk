@@ -26,3 +26,5 @@ ProjectPath=part_libs\ADP7185ACPZN3.3-R7 -3V3 regulator\ADP7185ACPZN3P3-R7.LibPk
 ProjectPath=part_libs\LP5907MFX 3.3 regulator\LP5907MFX-3P3&slash_NOPB.LibPkg
 [Project18]
 ProjectPath=part_libs\LP5907MFX-2.5 2.5 regulator\LP5907MFX-2P5&slash_NOPB.LibPkg
+[Project20]
+ProjectPath=part_libs\KSS221GLFS Switch\KSS221GLFS.LibPkg

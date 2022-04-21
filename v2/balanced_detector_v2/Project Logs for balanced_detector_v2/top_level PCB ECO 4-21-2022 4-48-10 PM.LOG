@@ -1,0 +1,33 @@
+Added Component: Designator=U3(LQFP32_7X7X1P4)
+Add component (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2022 Ultra Librarian. All rights reserved."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "STM32L051K8T6"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mfr_Name"; Value = "STMicroelectronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=3V3 Pin=U3-1
+Added Pin To Net: NetName=NetR1_2 Pin=U3-2
+Added Pin To Net: NetName=NetR2_2 Pin=U3-3
+Added Pin To Net: NetName=NRST Pin=U3-4
+Added Pin To Net: NetName=3V3 Pin=U3-5
+Added Pin To Net: NetName=V1L Pin=U3-6
+Added Pin To Net: NetName=V2L Pin=U3-7
+Added Pin To Net: NetName=V3L Pin=U3-8
+Added Pin To Net: NetName=V4L Pin=U3-9
+Added Pin To Net: NetName=V5L Pin=U3-10
+Added Pin To Net: NetName=V1R Pin=U3-11
+Added Pin To Net: NetName=V2R Pin=U3-12
+Added Pin To Net: NetName=V3R Pin=U3-13
+Added Pin To Net: NetName=GND Pin=U3-16
+Added Pin To Net: NetName=3V3 Pin=U3-17
+Added Pin To Net: NetName=V4R Pin=U3-18
+Added Pin To Net: NetName=V5R Pin=U3-19
+Added Pin To Net: NetName=VA Pin=U3-20
+Added Pin To Net: NetName=VB Pin=U3-21
+Added Pin To Net: NetName=DA_PD Pin=U3-22
+Added Pin To Net: NetName=SWDIO Pin=U3-23
+Added Pin To Net: NetName=SWCLK Pin=U3-24
+Added Pin To Net: NetName=UART_TX Pin=U3-29
+Added Pin To Net: NetName=UART_RX Pin=U3-30
+Added Pin To Net: NetName=NetR3_2 Pin=U3-31
+Added Pin To Net: NetName=GND Pin=U3-32
+Added Member To Class: ClassName=top_level Member=Component U3 STM32L051K8T6

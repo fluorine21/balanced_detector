@@ -1,0 +1,73 @@
+Added Component: Designator=U7(HCP_16_1_ADI)
+Add component (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2022 Ultra Librarian. All rights reserved."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "HMC539ALP3E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mfr_Name"; Value = "Analog Devices Inc"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Added Component: Designator=U9(HCP_16_1_ADI)
+Add component (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2022 Ultra Librarian. All rights reserved."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "LMH3401IRMST"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mfr_Name"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Added Component: Designator=U11(HCP_16_1_ADI)
+Add component (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2022 Ultra Librarian. All rights reserved."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "HMC539ALP3E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mfr_Name"; Value = "Analog Devices Inc"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Added Component: Designator=XMER1(DB1627_MNC)
+Add component (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2022 Ultra Librarian. All rights reserved."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "TCM2-63WX+"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mfr_Name"; Value = "Mini Circuits"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=5V Pin=U7-1
+Added Pin To Net: NetName=NetC21_2 Pin=U7-2
+Added Pin To Net: NetName=GND Pin=U7-4
+Added Pin To Net: NetName=GND Pin=U7-5
+Added Pin To Net: NetName=GND Pin=U7-6
+Added Pin To Net: NetName=GND Pin=U7-7
+Added Pin To Net: NetName=GND Pin=U7-8
+Added Pin To Net: NetName=NetC25_1 Pin=U7-11
+Added Pin To Net: NetName=NetR6_1 Pin=U7-12
+Added Pin To Net: NetName=NetR7_1 Pin=U7-13
+Added Pin To Net: NetName=NetR8_1 Pin=U7-14
+Added Pin To Net: NetName=NetR10_1 Pin=U7-15
+Added Pin To Net: NetName=NetR11_1 Pin=U7-16
+Added Pin To Net: NetName=GND Pin=U7-17
+Added Pin To Net: NetName=2V5 Pin=U9-1
+Added Pin To Net: NetName=GND Pin=U9-2
+Added Pin To Net: NetName=-2V5 Pin=U9-3
+Added Pin To Net: NetName=NetC25_2 Pin=U9-5
+Added Pin To Net: NetName=NetC27_2 Pin=U9-6
+Added Pin To Net: NetName=-2V5 Pin=U9-8
+Added Pin To Net: NetName=DA_PD Pin=U9-9
+Added Pin To Net: NetName=2V5 Pin=U9-10
+Added Pin To Net: NetName=GND Pin=U9-11
+Added Pin To Net: NetName=NetR13_1 Pin=U9-12
+Added Pin To Net: NetName=NetR12_1 Pin=U9-13
+Added Pin To Net: NetName=GND Pin=U9-14
+Added Pin To Net: NetName=5V Pin=U11-1
+Added Pin To Net: NetName=NetC31_2 Pin=U11-2
+Added Pin To Net: NetName=GND Pin=U11-4
+Added Pin To Net: NetName=GND Pin=U11-5
+Added Pin To Net: NetName=GND Pin=U11-6
+Added Pin To Net: NetName=GND Pin=U11-7
+Added Pin To Net: NetName=GND Pin=U11-8
+Added Pin To Net: NetName=NetC27_1 Pin=U11-11
+Added Pin To Net: NetName=NetR14_1 Pin=U11-12
+Added Pin To Net: NetName=NetR15_1 Pin=U11-13
+Added Pin To Net: NetName=NetR16_1 Pin=U11-14
+Added Pin To Net: NetName=NetR17_1 Pin=U11-15
+Added Pin To Net: NetName=NetR18_1 Pin=U11-16
+Added Pin To Net: NetName=GND Pin=U11-17
+Added Pin To Net: NetName=GND Pin=XMER1-1
+Added Pin To Net: NetName=GND Pin=XMER1-2
+Added Pin To Net: NetName=NetC24_1 Pin=XMER1-3
+Added Pin To Net: NetName=NetR12_2 Pin=XMER1-4
+Added Pin To Net: NetName=NetR13_2 Pin=XMER1-6
+Added Member To Class: ClassName=top_level Member=Component U7 HMC539ALP3E
+Added Member To Class: ClassName=top_level Member=Component U9 LMH3401IRMST
+Added Member To Class: ClassName=top_level Member=Component U11 HMC539ALP3E
+Added Member To Class: ClassName=top_level Member=Component XMER1 TCM2-63WX+
