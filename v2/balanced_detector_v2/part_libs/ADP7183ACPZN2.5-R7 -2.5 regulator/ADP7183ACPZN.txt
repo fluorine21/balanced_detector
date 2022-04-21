@@ -1,0 +1,246 @@
+# Created by Ultra Librarian Gold 8.3.307 Copyright © 1999-2021
+# Frank Frank, Accelerated Designs
+
+StartFootprints
+
+Footprint (Name "CP-8-27_ADI")
+Pad (Name "1") (Location -39.4646, 29.5276) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 27.74802971, 11.8110199) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "2") (Location -39.4646, 9.8425) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 27.74802971, 11.8110199) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "3") (Location -39.4646, -9.8425) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 27.74802971, 11.8110199) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "4") (Location -39.4646, -29.5276) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 27.74802971, 11.8110199) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "5") (Location 39.4646, -29.5276) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 27.74802971, 11.8110199) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "6") (Location 39.4646, -9.8425) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 27.74802971, 11.8110199) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "7") (Location 39.4646, 9.8425) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 27.74802971, 11.8110199) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "8") (Location 39.4646, 29.5276) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 27.74802971, 11.8110199) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "9") (Location 0, 0) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste -29.02755928)
+PadShape (Size 39.37007904, 59.05511856) (Shape Rectangular) (Layer Top)
+EndPad
+Polygon (PointCount 4) (Layer TopPaste) 
+Point (-19.68503952, 29.52755928)
+Point (-19.68503952, -29.52755928)
+Point (19.68503952, -29.52755928)
+Point (19.68503952, 29.52755928)
+EndPolygon
+Line (Width 6) (Start -63.33860016, -45.43307114) (End -63.33860016, 45.43307114) (Layer Mechanical15) 
+Line (Width 6) (Start -63.33860016, 45.43307114) (End -49.37007904, 45.43307114) (Layer Mechanical15) 
+Line (Width 6) (Start 63.33860016, 45.43307114) (End 49.37007904, 45.43307114) (Layer Mechanical15) 
+Line (Width 6) (Start 63.33860016, 45.43307114) (End 63.33860016, -45.43307114) (Layer Mechanical15) 
+Line (Width 6) (Start 63.33860016, -45.43307114) (End 49.37007904, -45.43307114) (Layer Mechanical15) 
+Line (Width 6) (Start -63.33860016, -45.43307114) (End -49.37007904, -45.43307114) (Layer Mechanical15) 
+Line (Width 6) (Start -49.37007904, -49.37007904) (End -49.37007904, -45.43307114) (Layer Mechanical15) 
+Line (Width 6) (Start -49.37007904, 45.43307114) (End -49.37007904, 49.37007904) (Layer Mechanical15) 
+Line (Width 6) (Start -49.37007904, 49.37007904) (End 49.37007904, 49.37007904) (Layer Mechanical15) 
+Line (Width 6) (Start 49.37007904, 49.37007904) (End 49.37007904, 45.43307114) (Layer Mechanical15) 
+Line (Width 6) (Start 49.37007904, -45.43307114) (End 49.37007904, -49.37007904) (Layer Mechanical15) 
+Line (Width 6) (Start 49.37007904, -49.37007904) (End -49.37007904, -49.37007904) (Layer Mechanical15) 
+Polygon (PointCount 12) (Layer Mechanical15) 
+Point (-63.33860016, -45.43307114)
+Point (-63.33860016, 45.43307114)
+Point (-49.37007904, 45.43307114)
+Point (-49.37007904, 49.37007904)
+Point (49.37007904, 49.37007904)
+Point (49.37007904, 45.43307114)
+Point (63.33860016, 45.43307114)
+Point (63.33860016, -45.43307114)
+Point (49.37007904, -45.43307114)
+Point (49.37007904, -49.37007904)
+Point (-49.37007904, -49.37007904)
+Point (-49.37007904, -45.43307114)
+EndPolygon
+Polygon (PointCount 4) (Layer Mechanical5) 
+Point (-68.33860016, -54.37009811)
+Point (-68.33860016, 54.37009811)
+Point (68.33860016, 54.37009811)
+Point (68.33860016, -54.37009811)
+EndPolygon
+Line (Width 6) (Start -16.01245415, -44.37007904) (End 16.01245415, -44.37007904) (Layer TopOverlay) 
+Line (Width 6) (Start 16.01245415, 44.37007904) (End -16.01245415, 44.37007904) (Layer TopOverlay) 
+Arc (Width 6) (Radius 3) (Location -67.18110657, 29.52755928) (StartAngle 75.67054749) (EndAngle 284.32945251) (Layer TopOverlay) 
+Line (Width 1) (Start -39.37007904, -39.37007904) (End 39.37007904, -39.37007904) (Layer Mechanical13) 
+Line (Width 1) (Start 39.37007904, -39.37007904) (End 39.37007904, 39.37007904) (Layer Mechanical13) 
+Line (Width 1) (Start 39.37007904, 39.37007904) (End -39.37007904, 39.37007904) (Layer Mechanical13) 
+Line (Width 1) (Start -39.37007904, 39.37007904) (End -39.37007904, -39.37007904) (Layer Mechanical13) 
+Arc (Width 0) (Radius 12) (Location 0, 39.37007904) (StartAngle 180) (EndAngle 360) (Layer Mechanical13) 
+Step (Name CP-8-27_ADI.step)
+EndFootprint
+
+Footprint (Name "CP-8-27_ADI-L")
+Pad (Name "1") (Location -37.4646, 29.5276) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 23.74802971, 9.8110199) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "2") (Location -37.4646, 9.8425) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 23.74802971, 9.8110199) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "3") (Location -37.4646, -9.8425) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 23.74802971, 9.8110199) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "4") (Location -37.4646, -29.5276) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 23.74802971, 9.8110199) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "5") (Location 37.4646, -29.5276) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 23.74802971, 9.8110199) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "6") (Location 37.4646, -9.8425) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 23.74802971, 9.8110199) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "7") (Location 37.4646, 9.8425) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 23.74802971, 9.8110199) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "8") (Location 37.4646, 29.5276) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 23.74802971, 9.8110199) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "9") (Location 0, 0) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 39.37007904, 59.05511856) (Shape Rectangular) (Layer Top)
+EndPad
+Line (Width 6) (Start -53.33860016, -38.43307114) (End -53.33860016, 38.43307114) (Layer Mechanical15) 
+Line (Width 6) (Start -53.33860016, 38.43307114) (End -43.37007904, 38.43307114) (Layer Mechanical15) 
+Line (Width 6) (Start 53.33860016, 38.43307114) (End 43.37007904, 38.43307114) (Layer Mechanical15) 
+Line (Width 6) (Start 53.33860016, 38.43307114) (End 53.33860016, -38.43307114) (Layer Mechanical15) 
+Line (Width 6) (Start 53.33860016, -38.43307114) (End 43.37007904, -38.43307114) (Layer Mechanical15) 
+Line (Width 6) (Start -53.33860016, -38.43307114) (End -43.37007904, -38.43307114) (Layer Mechanical15) 
+Line (Width 6) (Start -43.37007904, -43.37007904) (End -43.37007904, -38.43307114) (Layer Mechanical15) 
+Line (Width 6) (Start -43.37007904, 38.43307114) (End -43.37007904, 43.37007904) (Layer Mechanical15) 
+Line (Width 6) (Start -43.37007904, 43.37007904) (End 43.37007904, 43.37007904) (Layer Mechanical15) 
+Line (Width 6) (Start 43.37007904, 43.37007904) (End 43.37007904, 38.43307114) (Layer Mechanical15) 
+Line (Width 6) (Start 43.37007904, -38.43307114) (End 43.37007904, -43.37007904) (Layer Mechanical15) 
+Line (Width 6) (Start 43.37007904, -43.37007904) (End -43.37007904, -43.37007904) (Layer Mechanical15) 
+Polygon (PointCount 12) (Layer Mechanical15) 
+Point (-53.33860016, -38.43307114)
+Point (-53.33860016, 38.43307114)
+Point (-43.37007904, 38.43307114)
+Point (-43.37007904, 43.37007904)
+Point (43.37007904, 43.37007904)
+Point (43.37007904, 38.43307114)
+Point (53.33860016, 38.43307114)
+Point (53.33860016, -38.43307114)
+Point (43.37007904, -38.43307114)
+Point (43.37007904, -43.37007904)
+Point (-43.37007904, -43.37007904)
+Point (-43.37007904, -38.43307114)
+EndPolygon
+Polygon (PointCount 4) (Layer Mechanical5) 
+Point (-64.33860016, -54.37009811)
+Point (-64.33860016, 54.37009811)
+Point (64.33860016, 54.37009811)
+Point (64.33860016, -54.37009811)
+EndPolygon
+Line (Width 6) (Start -17.05438838, -44.37007904) (End 17.05438838, -44.37007904) (Layer TopOverlay) 
+Line (Width 6) (Start 17.05438838, 44.37007904) (End -17.05438838, 44.37007904) (Layer TopOverlay) 
+Line (Width 1) (Start -39.37007904, -39.37007904) (End 39.37007904, -39.37007904) (Layer Mechanical13) 
+Line (Width 1) (Start 39.37007904, -39.37007904) (End 39.37007904, 39.37007904) (Layer Mechanical13) 
+Line (Width 1) (Start 39.37007904, 39.37007904) (End -39.37007904, 39.37007904) (Layer Mechanical13) 
+Line (Width 1) (Start -39.37007904, 39.37007904) (End -39.37007904, -39.37007904) (Layer Mechanical13) 
+Arc (Width 0) (Radius 12) (Location 0, 39.37007904) (StartAngle 180) (EndAngle 360) (Layer Mechanical13) 
+Step (Name CP-8-27_ADI.step)
+EndFootprint
+
+Footprint (Name "CP-8-27_ADI-M")
+Pad (Name "1") (Location -41.4646, 29.5276) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 31.74802971, 9.8110199) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "2") (Location -41.4646, 9.8425) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 31.74802971, 9.8110199) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "3") (Location -41.4646, -9.8425) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 31.74802971, 9.8110199) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "4") (Location -41.4646, -29.5276) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 31.74802971, 9.8110199) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "5") (Location 41.4646, -29.5276) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 31.74802971, 9.8110199) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "6") (Location 41.4646, -9.8425) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 31.74802971, 9.8110199) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "7") (Location 41.4646, 9.8425) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 31.74802971, 9.8110199) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "8") (Location 41.4646, 29.5276) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 31.74802971, 9.8110199) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "9") (Location 0, 0) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 39.37007904, 59.05511856) (Shape Rectangular) (Layer Top)
+EndPad
+Line (Width 6) (Start -77.33860016, -54.43307114) (End -77.33860016, 54.43307114) (Layer Mechanical15) 
+Line (Width 6) (Start -77.33860016, 54.43307114) (End -59.37007904, 54.43307114) (Layer Mechanical15) 
+Line (Width 6) (Start 77.33860016, 54.43307114) (End 59.37007904, 54.43307114) (Layer Mechanical15) 
+Line (Width 6) (Start 77.33860016, 54.43307114) (End 77.33860016, -54.43307114) (Layer Mechanical15) 
+Line (Width 6) (Start 77.33860016, -54.43307114) (End 59.37007904, -54.43307114) (Layer Mechanical15) 
+Line (Width 6) (Start -77.33860016, -54.43307114) (End -59.37007904, -54.43307114) (Layer Mechanical15) 
+Line (Width 6) (Start -59.37007904, -59.37007904) (End -59.37007904, -54.43307114) (Layer Mechanical15) 
+Line (Width 6) (Start -59.37007904, 54.43307114) (End -59.37007904, 59.37007904) (Layer Mechanical15) 
+Line (Width 6) (Start -59.37007904, 59.37007904) (End 59.37007904, 59.37007904) (Layer Mechanical15) 
+Line (Width 6) (Start 59.37007904, 59.37007904) (End 59.37007904, 54.43307114) (Layer Mechanical15) 
+Line (Width 6) (Start 59.37007904, -54.43307114) (End 59.37007904, -59.37007904) (Layer Mechanical15) 
+Line (Width 6) (Start 59.37007904, -59.37007904) (End -59.37007904, -59.37007904) (Layer Mechanical15) 
+Polygon (PointCount 12) (Layer Mechanical15) 
+Point (-77.33860016, -54.43307114)
+Point (-77.33860016, 54.43307114)
+Point (-59.37007904, 54.43307114)
+Point (-59.37007904, 59.37007904)
+Point (59.37007904, 59.37007904)
+Point (59.37007904, 54.43307114)
+Point (77.33860016, 54.43307114)
+Point (77.33860016, -54.43307114)
+Point (59.37007904, -54.43307114)
+Point (59.37007904, -59.37007904)
+Point (-59.37007904, -59.37007904)
+Point (-59.37007904, -54.43307114)
+EndPolygon
+Polygon (PointCount 4) (Layer Mechanical5) 
+Point (-72.33860016, -54.37009811)
+Point (-72.33860016, 54.37009811)
+Point (72.33860016, 54.37009811)
+Point (72.33860016, -54.37009811)
+EndPolygon
+Line (Width 6) (Start -17.05438838, -44.37007904) (End 17.05438838, -44.37007904) (Layer TopOverlay) 
+Line (Width 6) (Start 17.05438838, 44.37007904) (End -17.05438838, 44.37007904) (Layer TopOverlay) 
+Line (Width 1) (Start -39.37007904, -39.37007904) (End 39.37007904, -39.37007904) (Layer Mechanical13) 
+Line (Width 1) (Start 39.37007904, -39.37007904) (End 39.37007904, 39.37007904) (Layer Mechanical13) 
+Line (Width 1) (Start 39.37007904, 39.37007904) (End -39.37007904, 39.37007904) (Layer Mechanical13) 
+Line (Width 1) (Start -39.37007904, 39.37007904) (End -39.37007904, -39.37007904) (Layer Mechanical13) 
+Arc (Width 0) (Radius 12) (Location 0, 39.37007904) (StartAngle 180) (EndAngle 360) (Layer Mechanical13) 
+Step (Name CP-8-27_ADI.step)
+EndFootprint
+EndFootprints
+
+StartComponents
+
+Component (Name "ADP7183ACPZN") (PartCount 1) (DesPrefix "U?")
+Pin (Location 300, 0) (Rotation 180) (PinType Passive) (Length 300) (Width 0) (Designator Visible "1") (Name Visible "VOUT") (PinSwap 0) (PartSwap 0) (PinSeq 1) (Part 1)
+Pin (Location 300, -100) (Rotation 180) (PinType Passive) (Length 300) (Width 0) (Designator Visible "2") (Name Visible "SENSE") (PinSwap 0) (PartSwap 0) (PinSeq 2) (Part 1)
+Pin (Location 300, -200) (Rotation 180) (PinType Passive) (Length 300) (Width 0) (Designator Visible "3") (Name Visible "VA") (PinSwap 0) (PartSwap 0) (PinSeq 3) (Part 1)
+Pin (Location 300, -300) (Rotation 180) (PinType Passive) (Length 300) (Width 0) (Designator Visible "4") (Name Visible "VAFB") (PinSwap 0) (PartSwap 0) (PinSeq 4) (Part 1)
+Pin (Location 1500, -300) (Rotation 0) (PinType Passive) (Length 300) (Width 0) (Designator Visible "5") (Name Visible "EN") (PinSwap 0) (PartSwap 0) (PinSeq 5) (Part 1)
+Pin (Location 1500, -200) (Rotation 0) (PinType Passive) (Length 300) (Width 0) (Designator Visible "6") (Name Visible "GND") (PinSwap 0) (PartSwap 0) (PinSeq 6) (Part 1)
+Pin (Location 1500, -100) (Rotation 0) (PinType Passive) (Length 300) (Width 0) (Designator Visible "7") (Name Visible "VREG") (PinSwap 0) (PartSwap 0) (PinSeq 7) (Part 1)
+Pin (Location 1500, 0) (Rotation 0) (PinType Passive) (Length 300) (Width 0) (Designator Visible "8") (Name Visible "VIN") (PinSwap 0) (PartSwap 0) (PinSeq 8) (Part 1)
+Pin (Location 1500, 100) (Rotation 0) (PinType Passive) (Length 300) (Width 0) (Designator Visible "9") (Name Visible "EP(GND)") (PinSwap 0) (PartSwap 0) (PinSeq 9) (Part 1)
+Rectangle (Width 5) (Start 300, -500) (End 1500, 300) (Part 1)
+Parameter (Name "Copyright") (Location 0, 0) (Height 50) (Rotation 0) (Justification Center) (Value "Copyright (C) 2022 Ultra Librarian. All rights reserved.") (Part 1)
+Parameter (Name "Mfr_Name") (Location 0, 0) (Height 50) (Rotation 0) (Justification Center) (Value "Analog Devices Inc") (Part 1)
+Parameter (Name "Manufacturer_Part_Number") (Location 0, 0) (Height 50) (Rotation 0) (Justification Center) (Value "ADP7183ACPZN") (Part 1)
+Parameter (Name "RefDes") (Location 900, 500) (Height 82) (Rotation 0) (Justification Center) (Value "RefDes") (Part 1)
+Parameter (Name "Type") (Location 900, 400) (Height 82) (Rotation 0) (Justification Center) (Value "DEV") (Part 1)
+Description (Value "No Description Available") (Part 1)
+Comment (Value "ADP7183ACPZN") (Part 1)
+Footprint (Name "CP-8-27_ADI")
+EndComponent
+EndComponents

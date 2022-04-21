@@ -1,0 +1,28 @@
+[ProjectGroup]
+Version=1.0
+[Project1]
+ProjectPath=balanced_detector_v2.PrjPcb
+[Project2]
+ProjectPath=part_libs\ADL ADL8111ACCZN Output Amp\ADL8111ACCZN.LibPkg
+[Project3]
+ProjectPath=part_libs\CMA-5043+ LNA\CMA-5043&plus_.LibPkg
+[Project4]
+ProjectPath=part_libs\HMC539A Attenuator\HMC539ALP3E.LibPkg
+[Project5]
+ProjectPath=part_libs\LMH3401 Diff Amp\LMH3401IRMST.LibPkg
+[Project6]
+ProjectPath=part_libs\SMA Side Connector\142-0711-821.LibPkg
+[Project7]
+ProjectPath=part_libs\STM32L051K8T6 32pin MCU\STM32L051K8T6.LibPkg
+[Project8]
+ProjectPath=part_libs\TCM2-43X+ Balun\TCM2-63WX&plus_.LibPkg
+[Project10]
+ProjectPath=part_libs\TL7660CDGKR Charge Pump\TL7660CDGKR.LibPkg
+[Project12]
+ProjectPath=part_libs\ADP7183ACPZN2.5-R7 -2.5 regulator\ADP7183ACPZN.LibPkg
+[Project14]
+ProjectPath=part_libs\ADP7185ACPZN3.3-R7 -3V3 regulator\ADP7185ACPZN3P3-R7.LibPkg
+[Project16]
+ProjectPath=part_libs\LP5907MFX 3.3 regulator\LP5907MFX-3P3&slash_NOPB.LibPkg
+[Project18]
+ProjectPath=part_libs\LP5907MFX-2.5 2.5 regulator\LP5907MFX-2P5&slash_NOPB.LibPkg
