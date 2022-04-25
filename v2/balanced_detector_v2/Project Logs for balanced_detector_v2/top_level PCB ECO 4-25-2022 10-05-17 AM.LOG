@@ -1,0 +1,11 @@
+Added Pin To Net: NetName=5V Pin=C11-1
+Added Pin To Net: NetName=2V5 Pin=C12-1
+Added Pin To Net: NetName=5V Pin=U5-1
+Added Pin To Net: NetName=5V Pin=U5-3
+Added Pin To Net: NetName=2V5 Pin=U5-5
+Added Pin To Net: NetName=GLED Pin=R2-2
+Added Pin To Net: NetName=GLED Pin=U3-26
+Added Net: Name=GLED
+Added Pin To Net: NetName=RLED Pin=R1-2
+Added Pin To Net: NetName=RLED Pin=U3-25
+Added Net: Name=RLED

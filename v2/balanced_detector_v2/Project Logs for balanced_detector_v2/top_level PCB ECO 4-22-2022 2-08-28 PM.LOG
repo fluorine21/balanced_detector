@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=NetR12_2 Pin=XMER1-4
+Removed Pin From Net: NetName=NetR13_2 Pin=XMER1-6
+Added Pin To Net: NetName=NetR13_2 Pin=XMER1-4
+Added Pin To Net: NetName=NetR12_2 Pin=XMER1-6

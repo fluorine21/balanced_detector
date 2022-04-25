@@ -1,0 +1,9 @@
+Added Component: Designator=SW1(IC28_ADL8111ACCZN_ADI)
+Add component (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2022 Ultra Librarian. All rights reserved."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "KSS221GLFS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mfr_Name"; Value = "C&K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NRST Pin=SW1-1
+Added Pin To Net: NetName=GND Pin=SW1-2
+Added Member To Class: ClassName=top_level Member=Component SW1 KSS221GLFS
