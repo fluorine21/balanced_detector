@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=NetC28_2 Pin=J2-1
+Removed Pin From Net: NetName=NetC30_1 Pin=J3-1
+Added Pin To Net: NetName=NetC30_1 Pin=J2-1
+Added Pin To Net: NetName=GND Pin=J2-2
+Added Pin To Net: NetName=NetC28_2 Pin=J3-1
+Added Pin To Net: NetName=GND Pin=J3-2
+Added Member To Class: ClassName=top_level Member=Component J1 142-0711-821

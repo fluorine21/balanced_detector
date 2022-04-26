@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=GND Pin=J1-2
+Removed Pin From Net: NetName=GND Pin=J1-2
+Removed Pin From Net: NetName=GND Pin=J1-2
+Removed Pin From Net: NetName=GND Pin=J1-2
+Removed Pin From Net: NetName=GND Pin=J2-2
+Removed Pin From Net: NetName=GND Pin=J3-2
+Removed Member From Class: ClassName=top_level Member=J1
+Removed Member From Class: ClassName=top_level Member=J2
+Removed Member From Class: ClassName=top_level Member=J3
